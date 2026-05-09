@@ -92,7 +92,6 @@ function displayCourses(courseList) {
 
         card.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
-            <p>${course.title}</p>
         `;
         
         container.appendChild(card);

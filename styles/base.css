@@ -19,6 +19,7 @@ header {
   border-bottom: solid 1px var(--Slate-Gray);
   column-gap: 8px;
   align-items: end;
+  font-family: "Lato", sans-serif;
 }
 
 header img{
@@ -83,6 +84,7 @@ header span{
   background-color: var(--Primary-color);
   color: white;
 }
+
 h1 {
   margin-left: 10px;
   color: var(--Primary-color);
@@ -140,6 +142,13 @@ h2{
   background-color: var(--Off-White);
 }
 
+.box p{
+  padding: 1rem;
+  font-family: "Lato";
+  font-size: 17px;
+
+}
+
 .box img{
   display: block;
   margin: 0 auto 1.5rem;
@@ -153,29 +162,59 @@ h2{
 .full-box{
   margin: 2rem;
   border: solid 1px var(--Slate-Gray);
+  text-align: center;
+  font-family: "Lato";
+  font-size: 17px;
 }
 
+/* The courses selected */
 #courseContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
   border-radius: 20px;
 }
 .course-card.completed {
   border: 2px solid var(--completed);
   background-color: var(--completed-border);
   border-radius: 20px;
+  position: relative;
 }
 
+.course-card.completed::after {
+  content: "✔";
+  color: var(--completed);
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 28px;
+}
+
+/* CSE/WDD with its info- greens */
 .course-card {
   border: 2px solid var(--Slate-Gray);
   border-radius: 20px;
-  max-width: 150px;
-  padding: .5rem;
+  width: 300px;
+  padding: 0;
+  text-align: center;
+  margin: .25rem;
+  font-size: 15px;
 }
 
-#allBtn, #WDDBtn, #CSEBtn{
+#allBtn, #WDDBtn, #CSEBtn {
   background-color: var(--Off-White);
   border-radius: 8px;
+  margin: .5rem;
+  font-size: 20px;
+}
+
+#allBtn:hover,
+#WDDBtn:hover, 
+#CSEBtn:hover {
+  background-color: var(--Primary-color);
+  color: var(--Off-White);
+  font-weight: 700;
+  cursor: pointer;
 }

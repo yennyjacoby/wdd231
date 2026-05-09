@@ -54,6 +54,23 @@
 
   }
 
+  #courseContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    margin: .5rem;
+  }
 
 
+  .course-card {
+    width: 150px;
+    text-align: center;
+  }
+
+  .course-card.completed::after {
+    content: "✔";
+    top: 7px;
+    right: 8px;
+  }
 }
