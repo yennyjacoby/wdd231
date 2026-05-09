@@ -24,4 +24,36 @@
   .navigation a {
     border: none;
   }
+
+  .home-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .full-box{
+    grid-column: span 2;
+    text-align: center;
+  }
+
+    
+  .box{
+    margin: 2rem;
+    border: solid 1px var(--Slate-Gray);
+
+  }
+  .box img{
+    display: block;
+    margin: 0 auto 1.5rem;
+    border-radius: 10px;  
+    width: 200px;
+    height: auto;
+    padding-bottom:0;
+
+  }
+
+
+
 }

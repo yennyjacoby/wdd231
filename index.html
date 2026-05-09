@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="Learn about Yenny Jacoby, her background, interests, and the courses she has taken."/> 
+    <meta name="author" content="Yenny Katherine Jacoby"/>    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
 </head>
 <body>
@@ -17,28 +22,46 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#">News and Events</a></li>
-            <li class="current"><a href="#">Dedicated temples</a></li>
-            <li><a href="#">Announced temples</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final project</a></li>
             
         </ul>
 
     </nav>
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+        <div class="home-container">
+            <div class="box">
+                <h2>About me</h2>
+                    <p>I am a software development student at BYU–Idaho Pathway, passionate about learning how technology works and how it can improve everyday life. Originally from Colombia, I have spent the last ten years building a new life in the United States. I’m also a proud mother of two, and my family is at the heart of everything I do. When I’m not studying or working on coding projects, I enjoy spending quality time with my loved ones and continuing to grow both personally and professionally.</p>
+            </div>
+            <div class="box">
+                <h2>Student photo</h2>
+                <img src="images/yenny-jacoby.webp" alt="Yenny Jacoby's photo">
+            </div>
+            <div class="full-box">
+                <h2>Web Certificate Courses</h2>
+                <div id="courseContainer"></div>
+                <p>The total number of course listed below is <span id="totalCredits"></span> </p>
+
+                <button id="allBtn">All Courses</button>
+                <button id="WDDBtn">WDD Courses</button>
+                <button id="CSEBtn">CSE Courses</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="social">
-            <a href="linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
-            <a href="github.com" target="_blank"><img src="images/github.svg" alt="github logo" width="16" height="16"></a>
-            <a href="x.com" target="_blank"><img src="images/twitter-x.svg" alt="x logo" width="16" height="16"></a>
-            <a href="facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook logo" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+            <a href="https://github.com/yennyjacoby" target="_blank"><img src="images/github.svg" alt="github logo" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="x logo" width="16" height="16"></a>
+            <a href="https://www.facebook.com/Yekaroro" target="_blank"><img src="images/facebook.svg" alt="facebook logo" width="16" height="16"></a>
         </div>
-        <p></p>
-        <p></p>
+        <p> © <span id="currentyear"></span> Yenny Jacoby |  Colorado </p>
+        <p><span id="lastmodified"></span></p>
     </footer>
 
-    <script src="scripts/navigation.js"></script>
 </body>
 </html>
 
