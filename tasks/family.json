@@ -1,0 +1,23 @@
+{
+    "family_name": "Romero",
+    "Date_moved_in": "2024-05-15",
+    "Number_of_people_in_the_family": "3",
+    "Visited_by_bishop": true,
+    "Family_members": [
+        {
+            "name": "Jose Romero",
+            "Gender": "Male",
+            "Birthdate": "1969/08/31"
+        },
+        {
+            "name": "Lorena Ruiz",
+            "Gender": "Female",
+            "Birthdate": "1970/02/16"
+        },
+        {
+            "name": "Lila Romero",
+            "Gender": "Female",
+            "Birthdate": "1990/12/12"
+        }
+    ]
+}
