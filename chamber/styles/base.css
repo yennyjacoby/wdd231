@@ -1,0 +1,102 @@
+
+:root{
+    --Logo-color: #032A53;
+    --Primary-color: #0F766E;
+    --Secondary-color: #D4A64A;
+    --Background-color: #FAFAFA;
+    --Text-color: #1E293B;
+    --gold: #C8A96B;
+    --footer: #d7d7d7;
+}
+
+body, footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* hamburger navigation */
+.hamburger {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--Primary-color);
+  cursor: pointer;
+}
+.hamburger::before {
+  content: "\2630";
+  font-size: 2rem;
+}
+/* "\2630" it is called entity */
+.hamburger.show::before {
+  content: "\00D7";
+  font-size: 2rem;
+}
+
+/* navigation */
+.navigation {
+  display: none;
+}
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Text-color);
+    font-family: 'lato';
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between
+  }
+
+.navigation.show{
+  display: block;
+}
+
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding img{
+  height: 100px;
+  margin: .5rem .5rem .5rem 2rem;
+}
+
+
+footer{
+  display: block;
+  margin: 2rem;
+  text-align: center;
+  background-color: var(--footer);
+  font-family: 'lato';
+
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+footer img{
+  width: 25px;
+  height: 25px;
+  margin: .25rem;
+  border: 2px solid var(--Background-color);
+  background-color: var(--Background-color);
+  border-radius: 3px;
+}
+
+.footer-column{
+  margin: .5rem;
+}
