@@ -105,8 +105,9 @@ footer img{
 /* GRID */
 #members.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
+  padding: 1rem;
   justify-items: center;
 }
 #members.grid img{
@@ -132,12 +133,34 @@ footer img{
 .member-card {
   border: 1px solid var(--Logo-color);
   padding: 1rem;
-  width: 170px;
   text-align: center;
-  margin: 2rem 0 0 0;
+  border-radius: 10px;.
+  background: white;
+  /* because I can't see the grid from the cellphone, don't set a width */
+
 }
 
-.member-card p, h3 {
+.member-card img{.
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+/* 
+.member-card {
+  background: white;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+} */
+
+
+
+.member-card p, 
+.member-card h3 {
   margin: 0.25rem 0;
 }
 
