@@ -1,0 +1,65 @@
+[
+  {
+    "name": "French Bakery Co.",
+    "address": "100 Main St, Arvada, CO",
+    "phone": "303-555-2100",
+    "website": "https://frechbakery.com",
+    "image": "bakery.jpg",
+    "membership": 2,
+    "description": "Family-owned bakery specializing in French bread and pastries."
+  },
+  {
+    "name": "Smash hamburger",
+    "address": "1245 Blue street, Arvada, CO",
+    "phone": "451-456-1254",
+    "website": "https://thesmashburger.com",
+    "image": "bakery.jpg",
+    "membership": 1,
+    "description": "Fast food restaurant located in downtown Arvada."
+  },
+  {
+    "name": "Real Fitness Club",
+    "address": "500 Peak Blvd, Golden, CO",
+    "phone": "303-555-5500",
+    "website": "https://real-fitness.com",
+    "image": "fitness.jpg",
+    "membership": 3,
+    "description": "Modern gym with personal training and group classes."
+  },
+  {
+    "name": "Nice patio Landscaping",
+    "address": "75 Pole Ln, Arvada, CO",
+    "phone": "752-456-2200",
+    "website": "https://nicepatio.com",
+    "image": "landscaping.jpg",
+    "membership": 2,
+    "description": "Eco-friendly landscaping and lawn care services."
+  },
+  {
+    "name": "Mi teotihuacan",
+    "address": "123 tonkawa ave, Arvada, CO",
+    "phone": "802-456-2200",
+    "website": "https://miteotihuacan.com",
+    "image": "landscaping.jpg",
+    "membership": 1,
+    "description": "Mexican food restaurant, where people can celebrate any kind of events."
+  },
+  {
+    "name": "Winnie Hair Salon",
+    "address": "2020 Court, Arvada, CO",
+    "phone": "502-456-4561",
+    "website": "https://winniehairsalon.com",
+    "image": "salon.jpg",
+    "membership": 3,
+    "description": "Family Hair salon with a friendly space for little kids"
+  },
+  {
+    "name": "Ferlend Marketstore",
+    "address": "50 Luke, Arvada, CO",
+    "phone": "752-000-2222",
+    "website": "https://ferlend-market.com",
+    "image": "landscaping.jpg",
+    "membership": 3,
+    "description": "Organic market store where people can find so many grocery products"
+  }
+]
