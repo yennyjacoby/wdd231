@@ -107,24 +107,41 @@ footer img{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+  justify-items: center;
 }
-
 #members.grid img{
-  width: 300px;
+  width: 180px;
+  height: auto;
 }
 
 #members.list{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  margin: 0 auto;
+  padding-top: 2rem;
 }
 
 #members.list img{
-  width: 150px;
+  width: 180px;
+  height: auto;
 }
+
 
 .member-card {
   border: 1px solid var(--Logo-color);
   padding: 1rem;
-  
+  width: 170px;
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+.member-card p, h3 {
+  margin: 0.25rem 0;
+}
+
+.view-grid-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
