@@ -1,3 +1,7 @@
+/* This helps me to dont have to scroll  */
+* {
+  box-sizing: border-box;
+}
 
 :root{
     --Logo-color: #032A53;
@@ -70,10 +74,14 @@ header {
   margin: .5rem .5rem .5rem 2rem;
 }
 
+h1{
+  margin-left: 2rem;
+}
 
 footer{
   display: block;
   margin: 2rem;
+  padding: 1rem;
   text-align: center;
   background-color: var(--footer);
   font-family: 'lato';
@@ -102,35 +110,7 @@ footer img{
 }
 
 
-/* GRID */
-#members.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-  justify-items: center;
-}
-#members.grid img{
-  width: 180px;
-  height: auto;
-}
-
-#members.list{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: 0 auto;
-  padding-top: 2rem;
-
-}
-
-#members.list img{
-  width: 180px;
-  height: auto;
-}
-
-
+/* GRID AND LIST*/
 .member-card {
   border: 1px solid var(--Logo-color);
   padding: 1rem;
@@ -140,6 +120,48 @@ footer img{
   max-width: 250px;
   box-sizing: border-box;
 }
+
+#members.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-items: center;
+  justify-content: center;
+}
+#members.grid img{
+  width: 180px;
+  height: auto;
+}
+
+
+
+
+#members.list .member-card {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  text-align: left;
+  margin-left: 0;
+  border-radius: 0;
+}
+
+#members.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  align-items: stretch; /* keeps rows centered but full width */
+}
+
+
+
+#members.list img{
+  display: none;
+}
+
+
 
 .member-card img{
   width: 100%;

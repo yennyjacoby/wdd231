@@ -1,8 +1,51 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 75rem) {
 
     body,
     footer {
         max-width: 1400px;
     }
+
+    .navigation{
+        display: block;
+    }
+    .navigation ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        list-style: none;
+    }
+
+    .navigation li a {
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left; /* optional */
+    }
+
+    .footer-column {
+        margin: 0 1rem;
+    }
+
+    #members.list .member-card {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 2fr;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+        margin-left: 0;
+        border-radius: 0;
+        padding: 1rem 2rem;
+        }
+
+
 
 }
