@@ -5,7 +5,7 @@
     --Secondary-color: #D4A64A;
     --Background-color: #FAFAFA;
     --Text-color: #1E293B;
-    --gold: #C8A96B;
+    --sunset: #C8A96B;
     --footer: #d7d7d7;
 }
 
@@ -122,6 +122,7 @@ footer img{
   gap: 1rem;
   margin: 0 auto;
   padding-top: 2rem;
+
 }
 
 #members.list img{
@@ -134,29 +135,17 @@ footer img{
   border: 1px solid var(--Logo-color);
   padding: 1rem;
   text-align: center;
-  border-radius: 10px;.
-  background: white;
-  /* because I can't see the grid from the cellphone, don't set a width */
-
+  border-radius: 10px;
+  width: 100%;
+  max-width: 250px;
+  box-sizing: border-box;
 }
 
-.member-card img{.
+.member-card img{
   width: 100%;
   max-width: 150px;
   height: auto;
 }
-/* 
-.member-card {
-  background: white;
-  border: none;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  border-radius: 10px;
-  padding: 1rem;
-  max-width: 250px;
-  width: 100%;
-  text-align: center;
-} */
-
 
 
 .member-card p, 
