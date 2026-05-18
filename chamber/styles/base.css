@@ -9,8 +9,10 @@
     --Secondary-color: #D4A64A;
     --Background-color: #FAFAFA;
     --Text-color: #1E293B;
-    --sunset: #C8A96B;
+    --sunset: #e0cca2;
     --footer: #d7d7d7;
+    --zebra1: #eff2f3;
+    --zebra2: #dfdfdf;
 }
 
 body, footer{
@@ -56,6 +58,13 @@ body, footer{
     display: flex;
     justify-content: space-between
   }
+
+ 
+.navigation li a:hover{ 
+    background-color: var(--Logo-color);
+    color: var(--Background-color);
+    font-weight: 700;
+} 
 
 .navigation.show{
   display: block;
@@ -176,6 +185,47 @@ footer img{
 }
 
 .view-grid-list{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#listBtn, 
+#gridBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--sunset);
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.view-grid-list img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+#listBtn:hover, 
+#gridBtn:hover {
+  background-color: var(--Primary-color);
+  color: var(--Background-color);
+  font-size: larger;
+  font-weight: 700;
+}
+
+
+/* Zebra list view */
+#members.list .member-card:nth-child(odd) {
+  background-color: var(--zebra1);
+}
+
+#member.list .member-card:nth-child(even) {
+  background-color: var(--zebra2);
 }

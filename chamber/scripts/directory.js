@@ -47,6 +47,9 @@ listBtn.addEventListener("click", () => {
     membersContainer.classList.remove("grid");
 });
 
+// HERE I am setting the grid as a default view, so the user sees the directory immediately with the CSS applied
+document.getElementById("members").classList.add("grid");
+
 // Important!! Call the function
 getMembers();
 

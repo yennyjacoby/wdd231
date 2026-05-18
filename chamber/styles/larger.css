@@ -11,7 +11,8 @@
     .navigation ul{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
+        justify-items: center;
+        gap: 2rem;
         list-style: none;
     }
 
@@ -20,6 +21,12 @@
         text-align: center;
         text-decoration: none;
     }
+
+    .navigation li a:hover{ 
+        background-color: var(--Logo-color);
+        color: var(--Background-color);
+        font-weight: 700;
+    } 
     .hamburger {
         display: none;
     }
