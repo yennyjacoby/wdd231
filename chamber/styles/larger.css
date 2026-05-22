@@ -53,6 +53,16 @@
         padding: 1rem 2rem;
         }
 
+/* GRID for Home */
+    #home-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
 
+    .forecast-day {
+        text-align: center;
+        padding: 10px;
+    }
 
 }

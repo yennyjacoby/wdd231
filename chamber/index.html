@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Arvada Chamber of Commerce</title>
+    
+    <meta name="description" content="Home Page of the Arvada Chamber of Commerce where people can find local businesses, services, and community resources in Arvada, Colorado."> 
+    <meta name="author" content="Yenny Katherine Jacoby">    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/arvada-weather.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/chamber-favicon.ico">
+
+    <meta property="og:title" content="Arvada Chamber of Commerce">
+    <meta property="og:description" content="Explore the Arvada Chamber of Commerce to find local businesses, services, and community resources in Arvada, Colorado.">
+    <meta property="og:url" content="https://yennyjacoby.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://yennyjacoby.github.io/wdd231/chamber/images/colorado-og.jpg">
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo-chamber.jpg" alt="Arvada Chamber or Commerce Logo">
+        </div>
+
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Businesses Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <!-- <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li> -->
+            </ul>
+        </nav>
+    </header>
+        
+
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 75rem)" srcset="images/hero-large.webp">
+                <source media="(min-width: 38rem)" srcset="images/hero-medium.jpg">
+                <img src="images/hero-small.jpg" alt="Hero image">
+            </picture>
+            <h1>Home</h1>
+            <!-- <p>Welcome to the Arvada Chamber of Commerce — where local businesses, entrepreneurs, and community leaders come together to support growth, connection, and opportunity in our city. We are proud to serve the vibrant community of Arvada by helping businesses thrive, encouraging economic development, and creating meaningful relationships that strengthen our local economy. </p>
+            <p>
+                Whether you are a business owner, resident, or visitor, we invite you to explore local events, discover trusted businesses, and become part of a community that values collaboration and success. Together, we are building a stronger future for Arvada.</p> -->
+        </section>
+
+        <!-- <div id="home-grid">
+            <section class="events">
+                <h2>Current Events</h2>
+                <p>Jun 10th. Ribbon Cutting: Rocky Mountain Wellness Clinic Opens in West Arvada</p>
+            </section>
+
+            <section class="weather"></section>
+                <div class="card">
+                    <h2 id="town"></h2>
+                    <img id="graphic" src="" alt="">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+            
+                <section class="weather">
+                    <div class="card">
+                    <h2>Weather Forecast</h2>    
+                    </div>
+                </section>
+        </div> -->
+        <!--  -->
+        <div id="home-grid">
+            <section class="card">
+                <h2>Current Events</h2>
+                <p>Jun 10th. Ribbon Cutting: Rocky Mountain Wellness Clinic Opens in West Arvada</p>
+            </section>
+
+            <section class="card">
+                <h2 id="town"></h2>
+                <img id="graphic" src="" alt="">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </section>
+            
+            <section class="card">
+                <h2>Weather Forecast</h2>
+                <div id="forecast"></div>    
+            </section>
+        </div>
+
+
+        <section class="cta"> 
+            <a href="join.html" class="button">Become a Member</a>
+        </section>
+        
+        <section class="spotlights">
+            <h2></h2>
+            <article></article>
+        </section>
+    
+    </main>
+    
+    <footer>
+        <div class="footer-column">
+            <p>Arvada Chamber of Commerce<br>
+            4545 Peaceful ave<br>
+            Arvada, CO 8000<br>
+            arvadachamber@gmail.com<br>
+            720 456 2154</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="picture of x (Twitter) logo" width="16" height="16"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube logo" width="16" height="16"></a>
+        </div>
+        <div class="footer-column">
+            <p>WDD231 Class Project <br>Yenny Jacoby <br>© Arvada Chamber of Commerce <br>Last Modified: <span id="lastUpdated"></span> </p>
+
+        </div>        
+    </footer>
+</body>
+</html>
