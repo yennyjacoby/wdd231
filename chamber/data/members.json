@@ -5,7 +5,7 @@
     "phone": "303-555-2100",
     "website": "https://frechbakery.com",
     "image": "bakery-logo.jpg",
-    "membership": 2,
+    "membership": "Gold",
     "description": "Family-owned bakery specializing in French bread and pastries."
   },
   {
@@ -14,7 +14,7 @@
     "phone": "451-456-1254",
     "website": "https://thesmashburger.com",
     "image": "smashburger-logo.jpg",
-    "membership": 1,
+    "membership": "Bronze",
     "description": "Fast food restaurant located in downtown Arvada."
   },
   {
@@ -23,7 +23,7 @@
     "phone": "303-555-5500",
     "website": "https://real-fitness.com",
     "image": "fitness-logo.jpg",
-    "membership": 3,
+    "membership": "Bronze",
     "description": "Modern gym with personal training and group classes."
   },
   {
@@ -32,7 +32,7 @@
     "phone": "752-456-2200",
     "website": "https://nicepatio.com",
     "image": "landscaping-logo.jpg",
-    "membership": 2,
+    "membership": "Gold",
     "description": "Eco-friendly landscaping and lawn care services."
   },
   {
@@ -41,7 +41,7 @@
     "phone": "802-456-2200",
     "website": "https://miteotihuacan.com",
     "image": "teotihuacan-logo.jpg",
-    "membership": 1,
+    "membership": "Bronze",
     "description": "Mexican food restaurant, where people can celebrate any kind of events."
   },
   {
@@ -50,7 +50,7 @@
     "phone": "502-456-4561",
     "website": "https://winniehairsalon.com",
     "image": "winnie-logo.jpg",
-    "membership": 3,
+    "membership": "Silver",
     "description": "Family Hair salon with a friendly space for little kids"
   },
   {
@@ -59,7 +59,7 @@
     "phone": "752-000-2222",
     "website": "https://ferlend-market.com",
     "image": "ferlend-logo.jpg",
-    "membership": 3,
+    "membership": "Gold",
     "description": "Organic market store where people can find so many grocery products"
   }
 ]

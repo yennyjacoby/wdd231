@@ -2,7 +2,8 @@ const theTown = document.querySelector('#town');
 const theDescription = document.querySelector('#description');
 const theTemperature = document.querySelector('#temperature');
 const theGraphic = document.querySelector('#graphic');
-
+const theHumidity = document.querySelector('#humidity');
+const theWind = document.querySelector('#wind');
 
 
 const myKey = "da1a707cd89b14fbccf20aeed9365732";
@@ -48,13 +49,16 @@ async function getForecast() {
 
 // DISOLAYING WEATHER
 function displayResults(data) {
-    console.log('hello');
 
     theTown.innerHTML = data.name;
     theDescription.innerHTML = data.weather[0].description;
 
     // temperature
     theTemperature.innerHTML = `${data.main.temp}&deg;F`;
+
+    theHumidity.innerHTML = `Humidity: ${data.main.humidity}%`;
+
+    theWind.innerHTML = `Wind: ${data.wind.speed} mph`;
 
     // weather icon
     const iconCode = data.weather[0].icon;

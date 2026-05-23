@@ -250,20 +250,19 @@ footer img{
 #home-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr;
-  gap: 1.5px;
+  grid-template-columns: (minmax(180px, 1fr));
   padding: .25rem;
 }
 
 
-/*Cards for Home */
+/*Cards for Home weather and forecast*/
 .card{
     /* display: flex;
     flex-direction: column;
     justify-content: flex-start; */
     overflow: hidden;
-    min-height: 260px;
-
+    max-width: 200px;   /* or 300px, whatever you like */
+    width: 100%;
 
     border: 3px solid var(--Logo-color);
     background-color: var(--zebra2);
@@ -295,14 +294,12 @@ footer img{
   overflow-x: hidden;
 }
 
-
-
 .card p {
-    padding: 1.2rem;
-
-    line-height: 1.7;
-
+    padding: 0;
+    line-height: 0;
     font-size: 1rem;
+    text-align: center;
+    font-weight: 100;
 } 
 
 #forecast{
@@ -386,4 +383,52 @@ h2{
 .forecast-day {
     text-align: center;
     padding: 10px;
+}
+
+/* Spotlight -Home */
+
+
+#spotlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-items: center;
+  justify-content: center;
+}
+
+.spotlight-card {
+  border: 1px solid var(--Logo-color);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.spotlight-card img {
+    width: 180px;
+    height: auto;
+}
+
+.spotlight-card h3{
+
+}
+.spotlight-card p{
+  padding: 0;
+  margin: 0;
+}
+
+.level.gold {
+    color: #C8A96B;
+    font-weight: bold;
+}
+
+.level.silver {
+    color: #8A8A8A;
+    font-weight: bold;
 }
