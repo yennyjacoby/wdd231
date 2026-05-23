@@ -257,11 +257,10 @@ footer img{
 
 /*Cards for Home weather and forecast*/
 .card{
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start; */
+    justify-content: flex-start;
     overflow: hidden;
-    max-width: 200px;   /* or 300px, whatever you like */
     width: 100%;
 
     border: 3px solid var(--Logo-color);
@@ -296,10 +295,11 @@ footer img{
 
 .card p {
     padding: 0;
-    line-height: 0;
+    line-height: 2rem;
     font-size: 1rem;
     text-align: center;
     font-weight: 100;
+    margin: 0 auto;
 } 
 
 #forecast{
