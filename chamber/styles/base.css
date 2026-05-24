@@ -349,10 +349,9 @@ footer img{
 }
 
 .forecast-day{
-  padding: 6rem;
+  padding: 1rem;
   background-color: var(--zebra1);
   text-align: center;
-  padding: 10px;
 }
 
 .forecast-day p{
