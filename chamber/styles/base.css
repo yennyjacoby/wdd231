@@ -79,6 +79,12 @@ body, footer{
   display: block;
 }
 
+/* WAYFINDING */
+ .navigation a.active {
+  border-bottom: 3px solid var(--Logo-color);
+  border-radius: 8px;
+}
+
 
 /* header */
 header {
@@ -235,12 +241,17 @@ footer img{
   background-color: var(--zebra1);
 }
 
-#member.list .member-card:nth-child(even) {
+#members.list .member-card:nth-child(even) {
   background-color: var(--zebra2);
 }
 
 
 /* home Page */
+
+.hero {
+  position: relative;
+}
+
 .hero img {
     width: 100%;
     max-width: none;
@@ -250,10 +261,39 @@ footer img{
 #home-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: (minmax(180px, 1fr));
+  grid-template-columns: minmax(180px, 1fr);
   padding: .25rem;
 }
 
+
+/* CTA - join the chamber */
+.button {
+  text-decoration: none;
+  color: var(--Logo-color);
+  border: 2px solid var(--Dark);
+  border-radius: 50px;
+  padding: 1rem;
+  background-color: var(--Secondary-color);
+  font-weight: 700;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  /* transition to hover */
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.button:hover {
+  background-color:var(--button-hover);
+  color: var(--Background-color);
+}
+
+/* Positioning the parent */
+.cta {
+  position: absolute;
+  bottom: 5rem;
+  right: 2rem;
+  z-index: 10;
+}
 
 /*Cards for Home weather and forecast*/
 .card{
@@ -302,13 +342,17 @@ footer img{
     margin: 0 auto;
 } 
 
-#forecast{
-  padding: 0;
+#forecast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .forecast-day{
   padding: 6rem;
   background-color: var(--zebra1);
+  text-align: center;
+  padding: 10px;
 }
 
 .forecast-day p{
@@ -316,6 +360,8 @@ footer img{
   margin: 2rem 0;
 
 }
+
+
 
 #graphic{
   width: 85px;
@@ -337,11 +383,7 @@ footer img{
     font-weight: 700;
 }
 
-/* border */
-body, footer {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 p{
   margin: 1.5rem;
@@ -351,38 +393,6 @@ p{
 h2{
   margin: 2rem;
   font-family: lato;
-}
-
-/* join the chamber button */
-.button {
-  text-decoration: none;
-  color: var(--Logo-color);
-  border: 2px solid var(--Dark);
-  border-radius: 50px;
-  padding: 1rem;
-  background-color: var(--Secondary-color);
-  color: var(--Dark);
-  font-weight: 700;
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
-  /* transition to hover */
-  transition: background-color 0.4s ease, color 0.4s ease;
-}
-
-.button:hover {
-  background-color:var(--button-hover);
-  color: var(--Background-color);
-}
-#forecast {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.forecast-day {
-    text-align: center;
-    padding: 10px;
 }
 
 /* Spotlight -Home */

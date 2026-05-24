@@ -27,6 +27,9 @@
         color: var(--Background-color);
         font-weight: 700;
     } 
+
+
+
     .hamburger {
         display: none;
     }

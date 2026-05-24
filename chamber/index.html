@@ -22,7 +22,7 @@
 
     <link rel="icon" href="images/chamber-favicon.ico">
 
-    <meta property="og:title" content="Arvada Chamber of Commerce">
+    <meta property="og:title" content="Website of the Arvada Chamber of Commerce, Colorado">
     <meta property="og:description" content="Explore the Arvada Chamber of Commerce to find local businesses, services, and community resources in Arvada, Colorado.">
     <meta property="og:url" content="https://yennyjacoby.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://yennyjacoby.github.io/wdd231/chamber/images/colorado-og.jpg">
@@ -31,13 +31,14 @@
     <header>
         <div class="branding">
             <img src="images/logo-chamber.jpg" alt="Arvada Chamber or Commerce Logo">
+
         </div>
 
         <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
 
         <nav class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Businesses Directory</a></li>
                 <li><a href="join.html">Join</a></li>
@@ -54,8 +55,11 @@
             <picture>
                 <source media="(min-width: 75rem)" srcset="images/hero-large.webp">
                 <source media="(min-width: 38rem)" srcset="images/hero-medium.jpg">
-                <img src="images/hero-small.jpg" alt="Hero image">
+                <img src="images/hero-small.jpg" alt="Hero image of Downtown Arvada">
             </picture>
+        <section class="cta"> 
+                <a href="join.html" class="button">Become a Member</a>
+        </section>
             <h1>Home</h1>
 
         </section>
@@ -69,7 +73,7 @@
 
             <section class="card">
                 <h2 id="town"></h2>
-                <img id="graphic" src="" alt="">
+                <img id="graphic" alt="Weather icon">
                 <p id="description"></p>
                 <p id="temperature"></p>
                 <p id="humidity"></p>
@@ -84,9 +88,7 @@
         </div>
 
 
-        <section class="cta"> 
-            <a href="join.html" class="button">Become a Member</a>
-        </section>
+
         
         <section id="spotlights"></section>
     
