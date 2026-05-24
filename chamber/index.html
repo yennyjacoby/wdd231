@@ -7,18 +7,27 @@
     
     <meta name="description" content="Home Page of the Arvada Chamber of Commerce where people can find local businesses, services, and community resources in Arvada, Colorado."> 
     <meta name="author" content="Yenny Katherine Jacoby">    
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css" media="all">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
+
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/arvada-weather.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    </noscript>
+
 
     <link rel="icon" href="images/chamber-favicon.ico">
 

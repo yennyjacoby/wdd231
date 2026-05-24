@@ -263,6 +263,10 @@ footer img{
   justify-content: center;
   grid-template-columns: minmax(180px, 1fr);
   padding: .25rem;
+
+}
+#home-grid .card {
+  min-height: 300px; /* adjust to your design */
 }
 
 
