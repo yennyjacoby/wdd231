@@ -1,0 +1,34 @@
+*{box-sizing: border-box;}
+
+
+
+#showHere {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#mydialog h2 {
+    color: #0b3816;
+    margin: .25rem;
+}
+
+#mydialog button {
+    border-radius: 3px;
+    box-shadow: 0 0 8px #74b178;
+}
+
+#mydialog p {
+    text-align: center;
+}
+
+
+::backdrop {
+    background-color: rgba(11, 56, 22, 0.4);
+}
+
+img {
+    margin: 1rem;
+    border-radius: 8px;
+}

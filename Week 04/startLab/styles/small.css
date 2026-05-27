@@ -1,0 +1,24 @@
+*{box-sizing: border-box;}
+
+
+#openBtn {
+    background-color: #dafacd;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#closeBtn{
+    background-color: #eeeeee;
+}
+
+::backdrop {
+    background-color: #d9dcd1;
+}
+
+#dialogBox {
+    border-radius: 8px;
+    text-align: center;
+    
+}
