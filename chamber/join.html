@@ -60,70 +60,66 @@
         
     <main>
         <section class="membership-layout">
-            <section id="fomr1">
+            <section id="form1">
                 <h2>Membership Application Form</h2>
                 <form method="get" action="thankyou.html" class="the-form">
                 
 
                     <div class="form-group">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="fname" title="First Name" required>
                     </div>
 
                     <div class="form-group">
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname">
+                        <input type="text" id="lname" name="lname" title="Last Name" required >
                     </div>
 
                     <div class="form-group">
                         <label for="org-title">Organization Title</label>
-                        <input type="text" id="org-title" name="org-title">
+                        <input type="text" id="org-title" name="org-title" autocomplete="organization-title" title="Organization title (at least 7 letters, hyphens, or spaces)" required pattern="[A-Za-z -]{7,}">
                     </div>            
 
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" inputmode="email" id="email" name="email" required placeholder="example@gmail.com" autocomplete="email">
+                        <input type="email" inputmode="email" id="email" name="email" required placeholder="example@gmail.com" autocomplete="email" title="Email Address">
                     </div>
 
                     <div class="form-group">
                         <label for="phone">Cell Phone</label>
-                        <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="435-456-5645">
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="435-456-5645" title="Cell Phone Number">
                     </div>
 
                     <div class="form-group">
                         <label for="organization">Business/Organization Name</label>
-                        <input type="text" id="organization" name="organization" required autocomplete="organization" placeholder="Hiking LLC">
+                        <input type="text" id="organization" name="organization" required autocomplete="organization" placeholder="Hiking LLC" title="Business or Organization Name">
                     </div>       
 
                     <div class="form-group">
                         <label>Membership Level</label>
                         <div class="membership">
 
-                            <label><input type="radio" name="Membership" value="np">Non profit organizations Membership</label>
-                            <label><input type="radio" name="Membership" value="bronze">Bronze Membership</label>
-                            <label><input type="radio" name="Membership" value="silver">Silver Membership</label>
-                            <label><input type="radio" name="Membership" value="gold">Gold</label>
+                            <label><input type="radio" name="Membership" value="np" required title="Non Profit Membership">Non profit organizations Membership</label>
+                            <label><input type="radio" name="Membership" value="bronze" title="Bronze Membership">Bronze Membership</label>
+                            <label><input type="radio" name="Membership" value="silver" title="Silver Membership">Silver Membership</label>
+                            <label><input type="radio" name="Membership" value="gold" title="Gold Membership">Gold</label>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="description">Business/Organization's description</label>
-                        <textarea id="description" name="description" title="Business or organization's description"></textarea>
+                        <textarea id="description" name="description" title="Business or organization's description" autocomplete="off"></textarea>
                     </div>
-
-                    <input type="hidden" id="timestamp" name="timestamp">
-
-
                     <div id="join">
                         <input type="submit" value="Join!">
                     </div>
-                        
+                    <input type="hidden" id="timestamp" name="timestamp">                      
                 </form>   
             </section>        
 
             <section id="membership-info">
                 <h2>Membership Levels</h2>
-                <div id="membershipPlace"></div>
+                <div id="membershipPlace" class="animation"></div>
             </section>                     
             <dialog id="theDialog">
                 <button id="closeDialogBtn" type="button">X</button>

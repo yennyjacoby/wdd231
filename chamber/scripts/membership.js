@@ -46,6 +46,13 @@ function MembershipCard(){
             </button>
         `;
         membershipPlace.appendChild(card);
+
+        // FOR THE ANIMATION
+        setTimeout(() => {
+            card.classList.add("animation");
+        }, 50);
+
+
     });
 }
 MembershipCard();
@@ -68,4 +75,5 @@ membershipPlace.addEventListener("click", (event) => {
 closeDialogBtn.addEventListener("click", () => {
     theDialog.close()
 });
+
 

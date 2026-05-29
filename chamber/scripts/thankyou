@@ -1,0 +1,19 @@
+const userInfo = new URLSearchParams(window.location.search);
+
+document.querySelector('#thanks').innerHTML = `
+<p>Thank you, ${userInfo.get('fname')} ${userInfo.get('lname')} for joining our Chamber of Commerce of Arvada.</p> 
+<p>We have received the following information.</p>
+<p>Email: ${userInfo.get('email')}</p>
+<p>Phone Number: ${userInfo.get('phone')}</p>
+<p>Business organization's Name: ${userInfo.get('organization')}</p> 
+<p>A member of our team will contact you shortly with next steps and additional details about your chamber benefits.</p>`
+
+const raw = userInfo.get("timestamp");
+const date = new Date(raw);
+
+document.getElementById("submittedDate").textContent =
+  date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });

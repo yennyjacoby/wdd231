@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you Page</title>
+    <meta name="description" content="This page confirms that your membership application has been successfully submitted for the Arvada Chamber of Commerce where people can display their local businesses and services."> 
+    <meta name="author" content="Yenny Katherine Jacoby">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css" media="all">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
+    <link rel="icon" href="images/chamber-favicon.ico">
+
+</head>
+<body>
+    <header>
+        <div class="branding">
+                <img src="images/logo-chamber.jpg" alt="Arvada Chamber or Commerce Logo">
+        </div>
+
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Businesses Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="thanks"></div>
+        <p>Date: <span id="submittedDate"></span></p>
+    </main>
+    <script src="scripts/thankyou" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date" defer></script>
+
+
+</body>
+
+<footer>
+    <div class="footer-column">
+        <p>Arvada Chamber of Commerce<br>
+        4545 Peaceful ave<br>
+        Arvada, CO 8000<br>
+        arvadachamber@gmail.com<br>
+        720 456 2154</p>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+        <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="picture of x (Twitter) logo" width="16" height="16"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube logo" width="16" height="16"></a>
+    </div>
+    <div class="footer-column">
+        <p>WDD231 Class Project <br>Yenny Jacoby <br>© Arvada Chamber of Commerce <br>Last Modified: <span id="lastUpdated"></span> </p>
+
+    </div>        
+</footer>
+
+<script>
+    document.getElementById("timestamp").value = new Date().toISOString();
+</script>
+</html>

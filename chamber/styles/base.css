@@ -16,7 +16,11 @@
     --zebra1: #eff2f3;
     --zebra2: #dfdfdf;
     --form: #ccdae1;
+    --form2: #e0ebf066;
     --text-form: #06328a;
+    --required: #008acf;
+    --complete: #b7ff93;
+
 }
 
 body, footer{
@@ -508,6 +512,27 @@ label {
 
 }
 
+input {
+  border: 1px solid #ccc;
+  border-left: 4px solid transparent;
+  padding: .5rem;
+  outline: none;
+}
+
+/* Required but empty/invalid */
+input:required:invalid {
+  border-left-color: var(--required);
+}
+
+/* Focus */
+input:focus {
+  border-left-color: var(--Dark);
+}
+
+/* Valid */
+input:required:valid {
+  border-left-color: var(--complete);
+}
 
 /* Placeholders */
 #fname,
@@ -521,7 +546,6 @@ label {
     font-style: italic; 
     font-size: small;
     background-color: var(--Background-color);
-    border: solid 1px var(--Logo-color);
     border-radius: 06px;
     padding: .75rem;
     width: 100%;
@@ -541,7 +565,7 @@ label {
     font-family: lato;
     border: 2px solid var(--Dark);
     background-image: linear-gradient(var(--Logo-color), var(--Primary-color));
-    color: var(--Dark);
+    color: var(--Background-color);
     border-radius: 6px;
     padding: .8rem;
     width: 100%;
@@ -560,10 +584,7 @@ label {
     cursor: pointer;
 }
 
-.the-form input:required {
-    padding: 1rem;
-    border-radius: 8px;
-}
+
 
 #join {
     padding-top: 1.5rem;
@@ -579,15 +600,21 @@ label {
     grid-template-columns: 1fr;
 }
 
+.membership-layout h2{
+    margin-top: 1rem;
+  
+    text-align: center;
+}
+
 #form1{
   justify-content: center;
 }
 
 .membership-card {
-    border: 1px solid var(--Logo-color);
+    border: 1px solid var(--sunset);
     padding: 1rem;
     border-radius: 8px;
-    background-color: var(--form);
+    background-color: var(--form2);
     margin: 1rem auto;
     max-width: 500px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -598,8 +625,41 @@ label {
 .join-layout h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center ;
-
+  font-weight: 100;
 }
+
+.animation {
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.animation:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.animation:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.animation:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
 .details-btn{
   border-radius: 8px;
   padding: .5rem;
@@ -607,4 +667,31 @@ label {
   cursor: pointer;
   display: flex;
   justify-content: center;
+}
+
+::backdrop {
+  background-color: var(--form2);
+}
+
+dialog {
+    border-radius: 8px;
+}
+
+#closeDialogBtn {
+  padding: .5rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+#thanks {
+  margin: 2rem;
+  text-align: center;
+  padding: 6rem 0;
+
+}
+
+#thanks p {
+  font-family:'Segoe UI';
+
 }
