@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page | Arvada Chamber of Commerce</title>
+    
+    <meta name="description" content="This is the Join page of the Arvada Chamber of Commerce where people can submit their information to be able to display their local businesses, services, and community resources in Arvada, Colorado."> 
+    <meta name="author" content="Yenny Katherine Jacoby">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css" media="all">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
+
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/membership.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    </noscript>
+
+
+    <link rel="icon" href="images/chamber-favicon.ico">
+
+    <meta property="og:title" content="Website of the Arvada Chamber of Commerce, Colorado">
+    <meta property="og:description" content="Explore the Arvada Chamber of Commerce to find local businesses, services, and community resources in Arvada, Colorado.">
+    <meta property="og:url" content="https://yennyjacoby.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://yennyjacoby.github.io/wdd231/chamber/images/colorado-og.jpg">
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo-chamber.jpg" alt="Arvada Chamber or Commerce Logo">
+
+        </div>
+
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Businesses Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+        
+    <main>
+        <section class="membership-layout">
+            <section id="fomr1">
+                <h2>Membership Application Form</h2>
+                <form method="get" action="thankyou.html" class="the-form">
+                
+
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="org-title">Organization Title</label>
+                        <input type="text" id="org-title" name="org-title">
+                    </div>            
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" inputmode="email" id="email" name="email" required placeholder="example@gmail.com" autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Cell Phone</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="435-456-5645">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization">Business/Organization Name</label>
+                        <input type="text" id="organization" name="organization" required autocomplete="organization" placeholder="Hiking LLC">
+                    </div>       
+
+                    <div class="form-group">
+                        <label>Membership Level</label>
+                        <div class="membership">
+
+                            <label><input type="radio" name="Membership" value="np">Non profit organizations Membership</label>
+                            <label><input type="radio" name="Membership" value="bronze">Bronze Membership</label>
+                            <label><input type="radio" name="Membership" value="silver">Silver Membership</label>
+                            <label><input type="radio" name="Membership" value="gold">Gold</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Business/Organization's description</label>
+                        <textarea id="description" name="description" title="Business or organization's description"></textarea>
+                    </div>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+
+                    <div id="join">
+                        <input type="submit" value="Join!">
+                    </div>
+                        
+                </form>   
+            </section>        
+
+            <section id="membership-info">
+                <h2>Membership Levels</h2>
+                <div id="membershipPlace"></div>
+            </section>                     
+            <dialog id="theDialog">
+                <button id="closeDialogBtn" type="button">X</button>
+                <h2 id="dialogTitle"></h2>
+
+                <p>
+                    <strong>Requirements:</strong>
+                    <span id="dialogRequirement"></span>
+                </p>
+                <p>
+                    <strong>Benefits:</strong>
+                    <span id="dialogBenefits"></span>
+                </p>
+                <p>
+                    <strong>Amount:</strong>
+                    <span id="dialogAmount"></span>
+                </p>
+            </dialog>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-column">
+            <p>Arvada Chamber of Commerce<br>
+            4545 Peaceful ave<br>
+            Arvada, CO 8000<br>
+            arvadachamber@gmail.com<br>
+            720 456 2154</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="picture of x (Twitter) logo" width="16" height="16"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube logo" width="16" height="16"></a>
+        </div>
+        <div class="footer-column">
+            <p>WDD231 Class Project <br>Yenny Jacoby <br>© Arvada Chamber of Commerce <br>Last Modified: <span id="lastUpdated"></span> </p>
+
+        </div>        
+    </footer>
+
+    <script>
+        document.getElementById("timestamp").value = new Date().toISOString();
+    </script>
+
+</body>
+</html>
