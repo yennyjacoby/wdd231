@@ -571,7 +571,6 @@ input:required:valid {
     background-image: linear-gradient(var(--Logo-color), var(--Primary-color));
     color: var(--Background-color);
     border-radius: 6px;
-    padding: .8rem;
     width: 100%;
     max-width: 300px;
     box-shadow: 1px 1px 4px var(--Logo-color);
