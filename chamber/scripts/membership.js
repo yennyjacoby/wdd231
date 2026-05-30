@@ -55,7 +55,7 @@ function MembershipCard(){
 
     });
 }
-MembershipCard();
+membershipPlace.appendChild(card);
 
 membershipPlace.addEventListener("click", (event) => {
     const btn = event.target.closest(".details-btn");

@@ -8,11 +8,8 @@
     <meta name="description" content="This is the Join page of the Arvada Chamber of Commerce where people can submit their information to be able to display their local businesses."> 
     <meta name="author" content="Yenny Katherine Jacoby">    
 
-    <link rel="preload" href="styles/base.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/base.css"></noscript>
-    <link rel="preload" href="styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles/normalize.css"></noscript>
-
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
 
 
@@ -20,12 +17,14 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/membership.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-        as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+   
+
     <noscript>
     <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
@@ -45,7 +44,7 @@
 <body>
     <header>
         <div class="branding">
-            <img src="images/logo-chamber.webp" alt="Arvada Chamber of Commerce Logo" width="299" height="130">
+            <img src="images/logo-chamber.webp" alt="Arvada Chamber of Commerce Logo" width="299" height="130" fetchpriority="high">
 
         </div>
 

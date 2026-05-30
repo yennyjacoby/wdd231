@@ -30,7 +30,6 @@ body, footer{
 
 body {
   font-family: "Lato", sans-serif;
-  font-display: swap;
 }
 
 
@@ -102,7 +101,8 @@ header {
 }
 
 .branding img{
-  height: 100px;
+  width: 299px;
+  height: 130px;
   margin: .5rem .5rem .5rem 2rem;
 }
 
@@ -487,7 +487,7 @@ label {
 }
 
 #membershipPlace {
-  min-height: 400px; 
+  min-height: 700px; 
 }
 
 .membership label{ 
@@ -688,7 +688,12 @@ input:required:valid {
 }
 
 dialog {
+    display: none;
     border-radius: 8px;
+}
+
+dialog[open] {
+    display: block;
 }
 
 #closeDialogBtn {
