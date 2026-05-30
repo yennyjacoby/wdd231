@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Page | Arvada Chamber of Commerce</title>
     
-    <meta name="description" content="This is the Join page of the Arvada Chamber of Commerce where people can submit their information to be able to display their local businesses, services, and community resources in Arvada, Colorado."> 
+    <meta name="description" content="This is the Join page of the Arvada Chamber of Commerce where people can submit their information to be able to display their local businesses."> 
     <meta name="author" content="Yenny Katherine Jacoby">    
-    <link rel="preload" href="styles/base.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/base.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
 
 
@@ -58,6 +58,7 @@
     </header>
         
     <main>
+        <h1>Join The Arvada Chamber of Commerce </h1>
         <section class="membership-layout">
             <section id="form1">
                 <h2>Membership Application Form</h2>
@@ -66,12 +67,12 @@
 
                     <div class="form-group">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname" title="First Name" required>
+                        <input type="text" id="fname" name="fname" autocomplete="given-name" title="First Name" required>
                     </div>
 
                     <div class="form-group">
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname" title="Last Name" required >
+                        <input type="text" id="lname" name="lname" autocomplete="family-name" title="Last Name" required >
                     </div>
 
                     <div class="form-group">
@@ -162,9 +163,6 @@
         </div>        
     </footer>
 
-    <script>
-        document.getElementById("timestamp").value = new Date().toISOString();
-    </script>
 
 </body>
 </html>

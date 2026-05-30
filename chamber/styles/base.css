@@ -61,7 +61,7 @@ body, footer{
     text-align: center;
     text-decoration: none;
     color: var(--Text-color);
-    font-family: 'lato';
+    font-family: 'lato', sans-serif;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
@@ -110,7 +110,7 @@ footer{
   padding: 1rem;
   text-align: center;
   background-color: var(--footer);
-  font-family: 'lato';
+  font-family: 'lato', sans-serif;
 
 }
 
@@ -498,10 +498,7 @@ label {
     font-size: .9rem;
 }
 
-.the-form input[type="submit"]:hover {
-    border: 2px solid var(--Primary-color);
-    background-color: var(--zebra1);
-}
+
 
 .form-group p {
     font-size: .8rem;
@@ -562,7 +559,7 @@ input:required:valid {
 }
 
 .the-form input[type="submit"] {
-    font-family: lato;
+    font-family: 'lato', sans-serif;
     border: 2px solid var(--Dark);
     background-image: linear-gradient(var(--Logo-color), var(--Primary-color));
     color: var(--Background-color);
@@ -579,8 +576,9 @@ input:required:valid {
     
 }
 
-
 .the-form input[type="submit"]:hover {
+    border: 2px solid var(--Primary-color);
+    background-color: var(--zebra1);
     cursor: pointer;
 }
 

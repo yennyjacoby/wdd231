@@ -76,4 +76,7 @@ closeDialogBtn.addEventListener("click", () => {
     theDialog.close()
 });
 
+// This is to save the date from the thank you page
+document.getElementById("timestamp").value = new Date().toISOString();
+
 
