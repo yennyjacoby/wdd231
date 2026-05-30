@@ -101,8 +101,15 @@ header {
 }
 
 h1{
-  margin-left: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Segoe', Verdana;
+  letter-spacing: 0.5px;
+  color: var(--Logo-color);
+  border-bottom: 4px solid var(--Primary-color);
 }
+
+
 
 footer{
   display: block;
