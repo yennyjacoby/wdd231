@@ -34,7 +34,9 @@ const dialogAmount = document.querySelector("#dialogAmount");
 const closeDialogBtn = document.querySelector("#closeDialogBtn");
 
 
-function MembershipCard(){
+function MembershipCard() {
+    const fragment = document.createDocumentFragment();
+
     memberships.forEach((level, index) => {
         const card = document.createElement("section");
         card.classList.add("membership-card");
@@ -45,16 +47,16 @@ function MembershipCard(){
                 Learn More
             </button>
         `;
-        membershipPlace.appendChild(card);
 
-        // FOR THE ANIMATION
-        setTimeout(() => {
-            card.classList.add("animation");
-        }, 50);
+        card.classList.add("animation");
 
-
+        fragment.appendChild(card);
     });
+
+    membershipPlace.appendChild(fragment);
 }
+
+
 MembershipCard();
 
 membershipPlace.addEventListener("click", (event) => {
