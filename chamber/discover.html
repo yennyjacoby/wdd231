@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page | Arvada Chamber of Commerce</title>
+    
+    <meta name="description" content="This is the Join page of the Arvada Chamber of Commerce where people can submit their information to be able to display their local businesses."> 
+    <meta name="author" content="Yenny Katherine Jacoby">    
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 900px)">
+
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+   
+
+    <noscript>
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    </noscript>
+
+
+    <link rel="icon" href="images/chamber-favicon.ico">
+
+    <meta property="og:title" content="Website of the Arvada Chamber of Commerce, Colorado">
+    <meta property="og:description" content="Explore the Arvada Chamber of Commerce to find local businesses, services, and community resources in Arvada, Colorado.">
+    <meta property="og:url" content="https://yennyjacoby.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://yennyjacoby.github.io/wdd231/chamber/images/colorado-og.jpg">
+
+    <link rel="preload" as="image" href="images/logo-chamber.webp">
+
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo-chamber.webp" alt="Arvada Chamber of Commerce Logo" width="299" height="130" fetchpriority="high">
+
+        </div>
+
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="discover.html"  class="active">Discover</a></li>
+                <li><a href="directory.html">Businesses Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+        
+    <main>
+        <h1>Discover Amazing Places in Arvada </h1>
+        <div id="allplaces"></div>
+    </main>
+    
+    <footer>
+        <div class="footer-column">
+            <p>Arvada Chamber of Commerce<br>
+            4545 Peaceful ave<br>
+            Arvada, CO 8000<br>
+            arvadachamber@gmail.com<br>
+            720 456 2154</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="picture of x (Twitter) logo" width="16" height="16"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube logo" width="16" height="16"></a>
+        </div>
+        <div class="footer-column">
+            <p>WDD231 Class Project <br>Yenny Jacoby <br>© Arvada Chamber of Commerce <br>Last Modified: <span id="lastUpdated"></span> </p>
+
+        </div>        
+    </footer>
+
+
+</body>
+</html>

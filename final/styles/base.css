@@ -1,0 +1,21 @@
+:root {
+  --jungle-green: #0B6E4F;
+  --caribbean-turquoise: #1CCAD8;
+  --guava-pink: #a31838;
+  --mango-orange: #FF9F1C;
+  --coffee-brown: #6F4E37;
+  --cloud-white: #F7F7F2;
+}
+
+h1{ 
+    color: var(--guava-pink);
+    text-align: center;
+}
+h2 {
+    color: var(--jungle-green);
+    font-family: 'oswald', sans-serif;
+}
+
+p {
+    font-family: 'cabin', sans-serif;
+}
