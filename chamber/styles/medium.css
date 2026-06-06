@@ -1,5 +1,10 @@
 @media only screen and (min-width: 38rem) {
 
+    :root{
+    --Logo-color: #032A53;
+    --Primary-color: #0F766E;
+    }
+
     #allplaces div{
         grid-template-areas: 
         "photograph name"
@@ -9,6 +14,10 @@
 
     #allplaces div img {
         width: 300px;
+    }
+
+    #allplaces div img:hover {
+	box-shadow: 0 0 10px var(--Primary-color);
     }
 
 }
