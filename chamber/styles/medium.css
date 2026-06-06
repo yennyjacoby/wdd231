@@ -1,9 +1,5 @@
 @media only screen and (min-width: 38rem) {
 
-    :root{
-    --Logo-color: #032A53;
-    --Primary-color: #0F766E;
-    }
 
     #allplaces div{
         grid-template-areas: 
