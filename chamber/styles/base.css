@@ -25,7 +25,7 @@
 }
 
 body, footer{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -55,6 +55,9 @@ body {
 /* navigation */
 .navigation {
   display: none;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 .navigation ul {
   list-style: none;
@@ -99,12 +102,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+
+
 .branding img{
-  width: 299px;
-  height: 130px;
-  margin: .5rem .5rem .5rem 2rem;
+  width: 200px;
+  height: auto;
+  margin: .5rem auto;
 }
 
 h1{
@@ -403,9 +409,8 @@ footer img{
 }
 
 
-
-p{
-  margin: 1.5rem;
+p {
+  margin: 1rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 

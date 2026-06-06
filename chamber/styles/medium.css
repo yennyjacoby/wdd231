@@ -16,4 +16,7 @@
 	box-shadow: 0 0 10px var(--Primary-color);
     }
 
+    .branding img{
+    width: 300px;
+    }
 }
