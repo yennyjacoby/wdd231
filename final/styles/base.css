@@ -42,12 +42,22 @@ body{
     background-color: var(--cloud-white);
 }
 
-footer p {
+footer  {
     background-color: var(--jungle-green);
     padding: 2rem;
     text-align: center;
     border-radius: 8px;
 }
+
+footer img {
+    width: 30px;
+    height: 40px;
+    margin: 1rem;
+}
+
+
+
+
 
 /* HEADER */
 header {
@@ -206,9 +216,52 @@ header {
     text-shadow:
      2px -1px 0 var(--charcoal),
     -1px  2px 0 var(--charcoal),
-     2px  1px 0 var(--guava-pink)}
+     2px  1px 0 var(--guava-pink)
+}
+
+h1 {
+    font-family: ;
+}
+
+     /* API */
+#text-api {
+    padding: 1rem;
+}
 
 
+#text-api .card {
+    max-width: 350px;
+    border: 2px solid var(--charcoal);
+    border-radius: 8px;
+    background-color: var(--clear);
+    margin: 0 auto;
+}
+
+#text-api h2 {
+    margin: 0;
+    background-color: var(--cloud-white);
+    color: var(--charcoal);
+    border-radius: 8px;
+}
+
+
+
+#graphic {
+    background-color: var(--mango-orange);
+    border-radius: 50px;
+    display: block;
+    margin: .5rem auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#description,
+#temperature {
+    margin: 0;
+}
+
+/* 3 cards-homepage */
 .trips-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -221,8 +274,6 @@ header {
   text-align: center;
   box-shadow: 0 4px 12px var(--charcoal);
 }
-
-
 .trip-card {
   background: white;
   padding: 1rem;

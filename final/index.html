@@ -16,13 +16,16 @@
     <link rel="icon" href="images/favicon-colombia-uncovered.webp">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/display-trips.js" type="module" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
 
     <meta property="og:title" content="Colombia Uncovered">
     <meta property="og:description" content="Discover Colombia's most amazing destinations.">
-    <meta property="og:image" content="images/social-share.webp">
-    <meta property="og:url" content="https://yourgithubpagesurl">
+    <meta property="og:image" content="https://github.com/yennyjacoby/wdd231/blob/main/final/images/amazonas-rainforest.webp">
+    <meta property="og:url" content="https://yennyjacoby.github.io/wdd231/">
     <meta property="og:type" content="website">
-    
+
 </head>
 <body class="home">     
     <header>
@@ -54,8 +57,16 @@
                 <h1>Where Adventure Meets Paradise</h1>
             </div>
         </section>
-            <h2>Find your Next Adventure</h2>
-                <p>Whether you dream of exploring colorful colonial towns, relaxing on Caribbean beaches, hiking through breathtaking mountains, or discovering vibrant local culture, our website is here to make your journey easier and more exciting. Colombia Uncovered provides travel tips, destination guides, cultural insights, and personalized recommendations to help travelers confidently create the perfect adventure. From hidden gems to must-see attractions, we are dedicated to helping you experience the beauty, warmth, and diversity that make Colombia one of the most incredible destinations in the world.</p>
+        <h2>Find your Next Adventure</h2>
+        <section id="text-api">
+            <p>Whether you dream of exploring colorful colonial towns, relaxing on Caribbean beaches, hiking through breathtaking mountains, or discovering vibrant local culture, our website is here to make your journey easier and more exciting. Colombia Uncovered provides travel tips, destination guides, cultural insights, and personalized recommendations to help travelers confidently create the perfect adventure. From hidden gems to must-see attractions, we are dedicated to helping you experience the beauty, warmth, and diversity that make Colombia one of the most incredible destinations in the world.</p>
+            <div class="card">
+                <h2 id="town"></h2>
+                <img id="graphic" src="" alt="">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </div>
+        </section>
         
         <section id="random-trips" class="trips-cards"></section>
 
@@ -72,7 +83,17 @@
     </main>
     
     <footer>
-        <p>WDD231  | Yenny Jacoby © | Explore Colombia Travel Guide</p>     
+        <div>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="picture of x (Twitter) logo" width="16" height="16"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.svg" alt="Youtube logo" width="16" height="16"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project <br>Yenny Jacoby <br>© | Colombia Uncovered <br>Last Modified: <span id="lastUpdated"></span> </p>
+        
+
+        </div>    
     </footer>
 </body>
 </html>
