@@ -1,55 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    /* boundaries of every element */
+    /* outline: 1px solid red; */
+
+}
+
 :root {
   --jungle-green: #2A8D6E;
   --light-jungle: #d6e7e2;
-  --caribbean-turquoise: #1CCAD8;
+  --caribbean-turquoise: #84e3ea;
   --guava-pink: #a31838;
+  --dark-guava: #520d1d;
   --mango-orange: #FF9F1C;
   --charcoal: #1A1A1A;
   --cloud-white: #f3f3f3b7;
   --clear: #ffffff;
+  --required: #f95f00;
+  --required-done: #8bf13d;
 }
 
 
-h1 {
-    color: var(--clear);
-    background-color: var(--guava-pink);
-    text-align: center;
-    padding: 2rem 1rem;
-    border-radius: 10px;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
 
 h2 {
     color: var(--jungle-green);
     font-family: 'oswald', sans-serif;
     background-color: var(--light-jungle);
     padding: .5rem;
+    text-align: center;
 }
 
 p {
     font-family: 'cabin', sans-serif;
-}
-
-.wireframe img{
-    display: block;
-}
-
-#wireframe-mobile {
-    width: 150px;
-    margin: 1rem auto;
-}
-
-#wireframe-desktop {
-    width: 300px;
-    margin: 1rem auto;
-
+    margin: 1rem;
+    text-align: center;
 }
 
 body{
-    max-width: 1200px;
-    margin: 0 3rem;
     background-color: var(--cloud-white);
 }
 
@@ -58,5 +47,386 @@ footer p {
     padding: 2rem;
     text-align: center;
     border-radius: 8px;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    background-color: var(--charcoal);
+    padding: 1rem;
+}
+
+.home header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .5rem 2rem;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(1px); 
+
+}
+
+
+/* hamburger navigation */
+.hamburger {
+  display: block;
+  background: none;
+  border: none;
+  background-color: var(--clear);
+  border-radius: 8px;
+  color: var(--guava-pink);
+  cursor: pointer;
+}
+.hamburger::before {
+  content: "\2630";
+  font-size: 2rem;
+}
+/* "\2630" it is called entity */
+.hamburger.show::before {
+  content: "\00D7";
+  font-size: 2rem;
+}
+
+/* navigation */
+.navigation {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  z-index: 99;
+}
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--clear);
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    border-radius: 8px;
+}
+
+ 
+.navigation li a:hover{ 
+    background-color: var(--guava-pink);
+    color: var(--clear);
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+} 
+
+.navigation.show{
+    display: block;
+}
+
+
+.logo img{
+    width: 200px;
+    margin-top: .5rem;
+    display: block;
+}
+
+/* WAYFINDING */
+ .navigation a.active {
+    text-decoration: underline;
+    text-decoration-color: var(--cloud-white);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+
+}
+
+/* Hero image */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* the animation of zooming */
+    animation: zoomInOut 20s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-family: 'cinzel', sans-serif;
+    color: var(--clear);
+    text-align: center;
+    text-shadow:
+     2px -1px 0 var(--charcoal),
+    -1px  2px 0 var(--charcoal),
+     2px  1px 0 var(--guava-pink)}
+
+
+.trips-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--clear);
+  background-color: var(--clear);
+  border-radius: 9px;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--charcoal);
+}
+
+
+.trip-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.trip-card img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trip-card img:hover {
+box-shadow: 0 0 10px var(--guava-pink);
+}
+
+.button {
+  text-decoration: none;
+  background-color: var(--guava-pink);
+  border: 2px solid var(--charcoal);
+  border-radius: 30px;
+  padding: 1.5rem;
+  color: var(--clear);
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: 'cinzel', sans-serif ;
+  /* transition to hover */
+  transition: background-color 0.4s ease, color 0.4s ease;
+  text-align: center;
+}
+
+.button:hover {
+  background-color:var(--mango-orange);
+  color: var(--charcoal);
+}
+
+
+
+#contacting {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--light-jungle);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#contacting p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#trips-colombia{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--clear);
+  background-color: var(--clear);
+  border-radius: 9px;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--charcoal);
+}
+
+#tripDialog {
+    max-width: 300px;
+    border-radius: 8px;
+    border: 1px solid var(--caribbean-turquoise);
+    
+ }
+#tripDialog h2{
+    background-color: var(--clear);
+    color: var(--charcoal);
+    font-family: 'cabin', sans-serif;
+    margin: 0;
+}
+ ::backdrop {background-color: rgba(11, 56, 22, 0.4);
+}
+
+#closeDialog {
+    align-items: center;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.learn-more{
+    background-color: var(--caribbean-turquoise);
+    color: var(--charcoal);
+    font-weight: 700;
+    padding: .5rem;
+    border-radius: 8px;
+    font-family: 'cabin', sans-serif;
+    cursor: pointer;
+}
+
+/* FORM */
+
+
+
+
+
+.form-group{
+    margin: .5rem 1rem .5rem 2rem;
+    display: flex; 
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.the-form {
+  border: 2px solid var(--guava-pink);
+  background-color: var(--cloud-white);
+  border-radius: 12px;
+
+  max-width: 470px;
+  margin: 2rem auto;
+
+}
+
+.the-form div{
+    font-family: 'cabin', Tahoma;
+    padding-top: 1rem;
+    color: var(--charcoal);
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+
+/* Required but empty/invalid */
+input:required:invalid {
+  border-left-color: var(--required);
+}
+
+input:required:valid {
+  border-left-color: var(--required-done);
+}
+
+/* Placeholders */
+#fname,
+#lname,
+#org-title, 
+#email, 
+#phone, 
+#organization, 
+#description,
+#trip {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic; 
+    font-size: small;
+    background-color: var(--clear);
+    border-radius: 06px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+
+input {
+  border: 1px solid #ccc;
+  border-left: 4px solid transparent;
+  padding: .5rem;
+  outline: none;
+}
+
+
+.the-form input[type="submit"] {
+    font-family: 'cabin', sans-serif;
+    border: 2px solid var(--Dark);
+    background-image: linear-gradient(var(--guava-pink), var(--dark-guava));
+    color: var(--light-jungle);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 1px 1px 4px var(--required);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 2rem auto;
+    display: block;
+    padding: 1rem;
+    
+}
+
+.the-form input[type="submit"]:hover {
+    border: 1px solid var(--required);
+    cursor: pointer;
+}
+
+.the-form h2{
+    background-color: var(--clear);
+    
 }
 

@@ -1,0 +1,44 @@
+@media only screen and (min-width: 48rem) {
+
+    .navigation {
+        display: block;
+        background-color: transparent !important;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 2rem;
+        justify-content: flex-end;
+    }
+
+    .navigation li a {
+        padding: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        margin-top: -75px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .trip-card img {
+        width: 280px;
+    }
+    
+    .trips-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    #trips-colombia{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .trip-card img {
+        width: 190px;
+    }
+
+}

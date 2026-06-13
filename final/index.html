@@ -8,43 +8,67 @@
     <meta name="description" content="Discover the best of Colombia—its vibrant cities, stunning landscapes, rich culture, and unforgettable travel experiences. Plan your next adventure with our Colombia tourism guide."> 
     <meta name="author" content="Yenny Katherine Jacoby">    
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Cabin:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="images/favicon-colombia-uncovered.webp">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/display-trips.js" type="module" defer></script>
 
-</head>
-<body>     
-
-    <main>
-        <h1>Colombia Uncovered Site Plan</h1>
-        <h2>Site Name: </h2>
-            <p>Colombia Uncovered</p>
-            <p>I chose this title because I want to showcase some of Colombia's most beautiful places that are not widely known or commonly recognized by tourists. While I will also feature well-known destinations, my main focus will be on highlighting hidden gems and lesser-known locations that deserve more attention.</p>
-        <h2>Purpose: </h2>
-            <p>The purpose of this project is to inspire people to learn more about Colombia and consider it as an exciting travel destination. Through this website, visitors will discover a variety of places to explore, activities to enjoy, and cultural experiences that make Colombia unique. By presenting different regions, attractions, and travel styles, the site helps users identify what they enjoy most—whether it’s nature, history, food, beaches, or adventure—so they can choose the destinations that best match their interests and plan a trip that truly fits them. </p>
+    <meta property="og:title" content="Colombia Uncovered">
+    <meta property="og:description" content="Discover Colombia's most amazing destinations.">
+    <meta property="og:image" content="images/social-share.webp">
+    <meta property="og:url" content="https://yourgithubpagesurl">
+    <meta property="og:type" content="website">
     
-        <h2>Scenarios:</h2>
-            <p>What are the safest and most beautiful places to visit in Colombia for first‑time travelers?</p>
-            <p>Which Colombian regions match my interests—beaches, mountains, culture, or adventure?</p>
-
-        <h2>Color Scheme</h2>
-            <p>(guava-pink: #a31838) Will be used for headers, buttons</p>
-            <p>(jungle-green: #2A8D6E) Will be used for titles such h2</p>
-            <p>(cloud-white: #f3f3f3b7) Will be used for backgrounds</p>
-
-        <h2>Typography</h2>
-            <p>Headings: Oswald</p>
-            <p>Body text: Cabin</p>
-        
-        
-        <div class="wireframe">
-            <h2>Wireframe</h2>
-            <img id="wireframe-desktop" src="images/wireframe-desktop.png" loading="lazy"      alt="Desktop wireframe layout for the Explore Colombia website">
-
-            <img id="wireframe-mobile" src="images/wireframe-mobile.png" loading="lazy"      alt="Mobile wireframe layout for the Explore Colombia website">
+</head>
+<body class="home">     
+    <header>
+         
+        <div class="logo">
+            <img src="images/colombia-logo.webp" alt="Colombia uncovered Logo">
 
         </div>
+
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 75rem)" srcset="images/hero-large.webp">
+                <source media="(min-width: 38rem)" srcset="images/medium-hero.webp">
+                <img src="images/small-hero.webp" alt="Landscape of mountains and wax palms in the Cocora Valley.">
+            </picture>
+            <div class="hero-content">
+                <h1>Where Adventure Meets Paradise</h1>
+            </div>
+        </section>
+            <h2>Find your Next Adventure</h2>
+                <p>Whether you dream of exploring colorful colonial towns, relaxing on Caribbean beaches, hiking through breathtaking mountains, or discovering vibrant local culture, our website is here to make your journey easier and more exciting. Colombia Uncovered provides travel tips, destination guides, cultural insights, and personalized recommendations to help travelers confidently create the perfect adventure. From hidden gems to must-see attractions, we are dedicated to helping you experience the beauty, warmth, and diversity that make Colombia one of the most incredible destinations in the world.</p>
+        
+        <section id="random-trips" class="trips-cards"></section>
+
+        <div id="contacting">
+            <p>Ready to discover the best of Colombia? Contact us today to receive exclusive trip offers, travel updates, and special deals tailored to your next adventure.</p>
+
+            <section> 
+                <a href="contact-us.html" class="button">Contact Us</a>
+            </section>
+        </div>
+            
+
+                            
     </main>
     
     <footer>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page to get more information from Colombia uncovered</title>
+    <meta name="description" content="Explore our collection of unforgettable trips across Colombia. Discover vibrant cities, breathtaking landscapes, cultural experiences, and outdoor adventures for travelers of all ages.">
+    <meta name="author" content="Yenny Katherine Jacoby">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Cabin:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon-colombia-uncovered.webp">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thank-you.js" defer></script>
+
+
+</head>
+<body>     
+    <header>
+         
+        <div class="logo">
+            <img src="images/colombia-logo.webp" alt="Colombia uncovered Logo">
+
+        </div>
+
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact-us.html" class="active">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+  
+        <h1>
+            Ready for you next adventures?
+        </h1>
+
+   
+
+        <section id="contacting-form">
+            <form id="contactForm" class="the-form">
+            
+                <h2>Subscribing form</h2>
+
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" autocomplete="given-name" title="First Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" autocomplete="family-name" title="Last Name" required >
+                </div>
+
+                <div class="form-group">
+                    <label for="org-title">Organization Title</label>
+                    <input type="text" id="org-title" name="org-title" autocomplete="organization-title" title="Organization title (at least 5 letters, hyphens, or spaces)" required pattern="^(?=(?:.*[A-Za-z]){7,})[A-Za-z -]+$">
+                </div>            
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" inputmode="email" id="email" name="email" required placeholder="example@gmail.com" autocomplete="email" title="Email Address">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Cell Phone</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="435-456-5645" title="Cell Phone Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">Business/Organization Name</label>
+                    <input type="text" id="organization" name="organization" required autocomplete="organization" placeholder="Hiking LLC" title="Business or Organization Name">
+                </div>       
+
+                <div class="form-group">
+                    <label for="trip">Trip you are interested in</label>
+                    <select id="trip" name="trip" required>
+                        <option value="">Select a trip...</option>
+                        <option value="Valle de Cocora">Valle de Cocora</option>
+                        <option value="Caño Cristales">Caño Cristales</option>
+                        <option value="Reserva Natural El Tuparro">Reserva Natural El Tuparro</option>
+                        <option value="Mariposario del Meta">Mariposario del Meta</option>
+                        <option value="Río y Cañón del Güejar">Río y Cañón del Güejar</option>
+                        <option value="Cartagena Old City">Cartagena Old City</option>
+                        <option value="Tayrona National Park">Tayrona National Park</option>
+                        <option value="Santuario de Las Lajas">Santuario de Las Lajas</option>
+                        <option value="Guatapé & El Peñol Rock">Guatapé & El Peñol Rock</option>
+                        <option value="Zipaquirá Salt Cathedral">Zipaquirá Salt Cathedral</option>
+                        <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                        <option value="Villa de Leyva">Villa de Leyva</option>
+                        <option value="Barichara">Barichara</option>
+                        <option value="Desierto de la Tatacoa">Desierto de la Tatacoa</option>
+                        <option value="Amazonas Rainforest (Leticia)">Amazonas Rainforest (Leticia)</option>
+                        <option value="La Candelaria (Bogotá)">La Candelaria (Bogotá)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Questions</label>
+                    <textarea id="description" name="description" title="Questions related to the trips offered by Colombia uncovered="off" required></textarea>
+                </div>
+
+                <div id="contact us">
+                    <input type="submit" value="Contact us">
+                </div>
+
+                <input type="hidden" id="timestamp" name="timestamp">                      
+            </form>   
+        </section>        
+               
+        <dialog id="thankYouDialog">
+            <button id="closeThankYou">❌</button>
+            <h2>Thank You! We will contact you shortly</h2>
+            <p id="thankYouMessage"></p>
+        </dialog>
+
+                            
+    </main>
+    
+    <footer>
+        <p>WDD231  | Yenny Jacoby © | Explore Colombia Travel Guide</p>     
+    </footer>
+</body>
+</html>
