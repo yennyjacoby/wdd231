@@ -21,6 +21,8 @@
   --clear: #ffffff;
   --required: #f95f00;
   --required-done: #8bf13d;
+  --light-charcoal: #b2b2b2;
+  --radius:8px
 }
 
 
@@ -47,7 +49,7 @@ footer  {
     background-color: var(--jungle-green);
     padding: 2rem;
     text-align: center;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
 footer img {
@@ -94,7 +96,7 @@ header {
   background: none;
   border: none;
   background-color: var(--clear);
-  border-radius: 8px;
+  border-radius: var(--radius);
   color: var(--guava-pink);
   cursor: pointer;
 }
@@ -118,7 +120,7 @@ header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(8px);
-  border-radius: 8px;
+  border-radius: var(--radius);
   z-index: 99;
 }
 .navigation ul {
@@ -137,7 +139,7 @@ header {
     display: block;
     text-align: center;
     transition: background-color 0.4s ease, color 0.4s ease;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
  
@@ -145,7 +147,7 @@ header {
     background-color: var(--guava-pink);
     color: var(--clear);
     font-weight: 700;
-    border-radius: 8px;
+    border-radius: var(--radius);
     text-decoration: none;
 } 
 
@@ -239,7 +241,7 @@ h1 {
 #text-api .card {
     max-width: 350px;
     border: 2px solid var(--charcoal);
-    border-radius: 8px;
+    border-radius: var(--radius);
     background-color: var(--clear);
     margin: 0 auto;
 }
@@ -248,7 +250,7 @@ h1 {
     margin: 0;
     background-color: var(--cloud-white);
     color: var(--charcoal);
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
 
@@ -284,7 +286,7 @@ h1 {
 .trip-card {
   background: white;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: var(--radius);
   box-shadow: 0 4px 12px rgba(0,0,0,.15);
 }
 
@@ -293,7 +295,7 @@ h1 {
   max-width: 300px;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: var(--radius);
 }
 
 .trip-card img:hover {
@@ -359,7 +361,7 @@ box-shadow: 0 0 10px var(--guava-pink);
 
 #tripDialog {
     max-width: 300px;
-    border-radius: 8px;
+    border-radius: var(--radius);
     border: 1px solid var(--caribbean-turquoise);
     
  }
@@ -376,7 +378,7 @@ box-shadow: 0 0 10px var(--guava-pink);
     align-items: center;
     font-size: 15px;
     height: 30px;
-    border-radius: 8px;
+    border-radius: var(--radius);
     cursor: pointer;
 }
 
@@ -385,7 +387,7 @@ box-shadow: 0 0 10px var(--guava-pink);
     color: var(--charcoal);
     font-weight: 700;
     padding: .5rem;
-    border-radius: 8px;
+    border-radius: var(--radius);
     font-family: 'cabin', sans-serif;
     cursor: pointer;
 }
@@ -450,12 +452,10 @@ input:required:valid {
     width: 100%;
     max-width: 400px;
     transition: border 0.2s ease, box-shadow 0.2s ease;
-
 }
 
-
 input {
-  border: 1px solid #ccc;
+  border: 1px solid var(--light-charcoal);
   border-left: 4px solid transparent;
   padding: .5rem;
   outline: none;
@@ -464,7 +464,7 @@ input {
 
 .the-form input[type="submit"] {
     font-family: 'cabin', sans-serif;
-    border: 2px solid var(--Dark);
+    border: 2px solid var(--light-charcoal);
     background-image: linear-gradient(var(--guava-pink), var(--dark-guava));
     color: var(--light-jungle);
     border-radius: 6px;

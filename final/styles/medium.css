@@ -2,7 +2,7 @@
 
     .navigation {
         display: block;
-        background-color: transparent !important;
+        background-color: transparent;
     }
 
     .navigation ul {
@@ -21,19 +21,12 @@
     .hamburger {
         display: none;
     }
-
-    .trip-card img {
-        width: 280px;
-    }
-    
+   
     .trips-cards {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-
     }
 
     #trips-colombia{
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
