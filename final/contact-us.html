@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page to get more information from Colombia uncovered</title>
-    <meta name="description" content="Explore our collection of unforgettable trips across Colombia. Discover vibrant cities, breathtaking landscapes, cultural experiences, and outdoor adventures for travelers of all ages.">
+    <meta name="Contact Colombia Uncovered to receive travel information and personalized trip recommendations for all ages.">
     <meta name="author" content="Yenny Katherine Jacoby">    
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -14,13 +14,14 @@
 
     <link rel="icon" href="images/favicon-colombia-uncovered.webp">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/thank-you.js" defer></script>
+
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/local-storage.js" defer></script>
 
 
     <meta property="og:title" content="Colombia Uncovered">
     <meta property="og:description" content="Discover Colombia's most amazing destinations.">
-    <meta property="og:image" content="https://github.com/yennyjacoby/wdd231/blob/main/final/images/amazonas-rainforest.webp">
+    <meta property="og:image" content="https://yennyjacoby.github.io/wdd231/final/images/og-image-colombia-uncovered.webp">
     <meta property="og:url" content="https://yennyjacoby.github.io/wdd231/contact-us.html">
     <meta property="og:type" content="website">
 
@@ -50,11 +51,8 @@
         <h1>
             Ready for you next adventures?
         </h1>
-
-   
-
-        <section id="contacting-form">
-            <form id="contactForm" class="the-form">
+        <section id="contac-form">
+            <form method="get" action="thank-you.html" class="the-form">
             
                 <h2>Subscribing form</h2>
 
@@ -110,13 +108,16 @@
                         <option value="La Candelaria (Bogotá)">La Candelaria (Bogotá)</option>
                     </select>
                 </div>
-
                 <div class="form-group">
                     <label for="description">Questions</label>
-                    <textarea id="description" name="description" title="Questions related to the trips offered by Colombia uncovered="off" required></textarea>
+                    <textarea id="description-form" 
+                            name="description" 
+                            title="Questions related to the trips offered by Colombia Uncovered" 
+                            autocomplete="off" 
+                            required></textarea>
                 </div>
 
-                <div id="contact us">
+                <div id="contact-us">
                     <input type="submit" value="Contact us">
                 </div>
 
@@ -129,6 +130,12 @@
             <h2>Thank You! We will contact you shortly</h2>
             <p id="thankYouMessage"></p>
         </dialog>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const timestampField = document.getElementById("timestamp");
+    timestampField.value = new Date().toISOString();
+    });
+    </script>
 
                             
     </main>

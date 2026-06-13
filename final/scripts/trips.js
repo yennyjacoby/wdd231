@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const trip = trips[index];
 
       dialogTitle.textContent = trip.name;
-      dialogImage.alt = trip.name;
 
       dialogInfo.innerHTML = `
         <strong>Location:</strong> ${trip.location}<br>
@@ -39,7 +38,7 @@ function displayTrips(list) {
 
   container.innerHTML = list.map((trip, index) => `
     <article class="trip-card">
-      <img src="images/${trip.photo}" alt="${trip.name}">
+      <img src="images/${trip.photo}" alt="${trip.name}" loading="lazy">
       <h3>${trip.name}</h3>
       <p>Location: ${trip.location}</p>
       <p>${trip.description}</p>

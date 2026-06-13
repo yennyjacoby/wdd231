@@ -1,24 +1,14 @@
-const form = document.querySelector("#contactForm");
-const dialog = document.querySelector("#thankYouDialog");
-const closeBtn = document.querySelector("#closeThankYou");
-const message = document.querySelector("#thankYouMessage");
+const userInfo = new URLSearchParams(window.location.search);
 
-closeBtn.addEventListener("click", () => dialog.close());
+document.querySelector('#thanks').innerHTML = `
+<p>Thank you, ${userInfo.get('fname')} ${userInfo.get('lname')}. Your message has been received. We will contact you at the following email: ${userInfo.get('email')} for more information about ${userInfo.get('trip')} trip.</p>`
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault(); //
+const raw = userInfo.get("timestamp");
+const date = new Date(raw);
 
-  const formData = new FormData(form);
-  const first = formData.get("fname");
-  const last = formData.get("lname");
-
-  const name = `${first} ${last}`;
-
-  message.innerHTML = `
-    Thank you, <strong>${name}</strong>!  
-    Your message has been received. We will contact you soon.
-  `;
-
-  dialog.showModal();
-  form.reset();
-});
+document.getElementById("submittedDate").textContent =
+  date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
