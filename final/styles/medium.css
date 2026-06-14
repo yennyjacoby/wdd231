@@ -22,15 +22,12 @@
         display: none;
     }
    
-    .trips-cards {
+    .trips-cards,
+    #trips-colombia {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #trips-colombia{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .trip-card img {
+      .trip-card img {
         width: 190px;
     }
 

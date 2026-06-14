@@ -22,6 +22,8 @@
   --required: #f95f00;
   --required-done: #8bf13d;
   --light-charcoal: #b2b2b2;
+  --nav-back: #000000D9;
+  --home-header: #00000033;
   --radius:8px
 }
 
@@ -84,7 +86,7 @@ header {
 
     padding: .5rem 2rem;
     z-index: 100;
-    background: rgba(0, 0, 0, 0.2); 
+    background: var(--home-header); 
     backdrop-filter: blur(1px); 
 
 }
@@ -117,8 +119,7 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: var(--nav-back);
   backdrop-filter: blur(8px);
   border-radius: var(--radius);
   z-index: 99;
@@ -137,7 +138,6 @@ header {
     font-family: 'cabin', sans-serif;
     font-weight: 700;
     display: block;
-    text-align: center;
     transition: background-color 0.4s ease, color 0.4s ease;
     border-radius: var(--radius);
 }
@@ -270,8 +270,9 @@ h1 {
     margin: 0;
 }
 
-/* 3 cards-homepage */
-.trips-cards {
+/* 3 cards-homepage with cards from trip page*/
+.trips-cards,
+#trips-colombia {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -287,7 +288,7 @@ h1 {
   background: white;
   padding: 1rem;
   border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  box-shadow: 0 4px 12px var(--nav-back);
   min-height: 350px;
 }
 
@@ -303,10 +304,10 @@ h1 {
 box-shadow: 0 0 10px var(--guava-pink);
 }
 
-.button {
+.button,
+.the-form input[type="submit"]  {
   text-decoration: none;
   background-color: var(--guava-pink);
-  border: 2px solid var(--charcoal);
   border-radius: 30px;
   padding: 1.5rem;
   color: var(--clear);
@@ -314,11 +315,12 @@ box-shadow: 0 0 10px var(--guava-pink);
   font-size: 1.3rem;
   display: block;
   width: fit-content;
-  margin: 0 auto;
+  margin: .5rem auto;
   font-family: 'cinzel', sans-serif ;
   /* transition to hover */
   transition: background-color 0.4s ease, color 0.4s ease;
   text-align: center;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -327,17 +329,14 @@ box-shadow: 0 0 10px var(--guava-pink);
 }
 
 
-
-#contacting {
+/* contact us from home */
+#contacting  {
     max-width: 500px;
     margin: 3rem auto;
     padding: 2rem;
     text-align: center;
     background-color: var(--light-jungle);
     border-radius: 12px;
-
-    display: flex;
-    flex-direction: column;
     gap: 1.5rem;
 }
 
@@ -345,19 +344,6 @@ box-shadow: 0 0 10px var(--guava-pink);
     margin: 0;
     font-size: 1.1rem;
     line-height: 1.6;
-}
-
-#trips-colombia{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 1rem;
-  border: 1px solid var(--clear);
-  background-color: var(--clear);
-  border-radius: 9px;
-  margin: 1rem;
-  text-align: center;
-  box-shadow: 0 4px 12px var(--charcoal);
 }
 
 #tripDialog {
@@ -372,12 +358,10 @@ box-shadow: 0 0 10px var(--guava-pink);
     font-family: 'cabin', sans-serif;
     margin: 0;
 }
- ::backdrop {background-color: rgba(11, 56, 22, 0.4);
+ ::backdrop {background-color: var(--home-header);
 }
 
 #closeDialog {
-    align-items: center;
-    font-size: 15px;
     height: 30px;
     border-radius: var(--radius);
     cursor: pointer;
@@ -394,9 +378,6 @@ box-shadow: 0 0 10px var(--guava-pink);
 }
 
 /* FORM */
-
-
-
 
 
 .form-group{
@@ -463,29 +444,6 @@ input {
 }
 
 
-.the-form input[type="submit"] {
-    font-family: 'cabin', sans-serif;
-    border: 2px solid var(--light-charcoal);
-    background-image: linear-gradient(var(--guava-pink), var(--dark-guava));
-    color: var(--light-jungle);
-    border-radius: 6px;
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 1px 1px 4px var(--required);
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: 2rem auto;
-    display: block;
-    padding: 1rem;
-    
-}
-
-.the-form input[type="submit"]:hover {
-    border: 1px solid var(--required);
-    cursor: pointer;
-}
-
 .the-form h2{
     background-color: var(--clear);
     color: var(--logo-color);
@@ -502,9 +460,6 @@ input {
 
 }
 
-#submittedDate {
-    font-style: italic;
-}
 
 .message-thanks {
     padding: 5rem 0;

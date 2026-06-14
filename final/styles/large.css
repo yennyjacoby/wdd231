@@ -7,7 +7,8 @@
         align-items: center;
     }
     
-    .trips-cards {
+    .trips-cards,
+    #trips-colombia {
     grid-template-columns: repeat(3, 1fr);
 
     }
