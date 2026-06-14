@@ -11,12 +11,10 @@
 :root {
   --jungle-green: #1e4d3e;
   --light-jungle: #d6e7e2;
-  --caribbean-turquoise: #84e3ea;
   --logo-color: #00318F;
   --guava-pink: #a31838;
-  --dark-guava: #520d1d;
   --mango-orange: #FF9F1C;
-  --charcoal: #1A1A1A;
+  --charcoal: #111111;
   --cloud-white: #f3f3f3b7;
   --clear: #ffffff;
   --required: #f95f00;
@@ -246,7 +244,7 @@ h1 {
 
 #text-api h2 {
     margin: 0;
-    background-color: var(--cloud-white);
+    background-color: var(--clear);
     color: var(--charcoal);
     border-radius: var(--radius);
 }
@@ -347,7 +345,6 @@ box-shadow: 0 0 10px var(--guava-pink);
 #tripDialog {
     max-width: 300px;
     border-radius: var(--radius);
-    border: 1px solid var(--caribbean-turquoise);
     
  }
 #tripDialog h2{
@@ -366,7 +363,7 @@ box-shadow: 0 0 10px var(--guava-pink);
 }
 
 .learn-more{
-    background-color: var(--caribbean-turquoise);
+    background-color: var(--light-jungle);
     color: var(--charcoal);
     font-weight: 700;
     padding: .5rem;
