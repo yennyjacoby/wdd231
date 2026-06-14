@@ -108,6 +108,11 @@ header {
   font-size: 2rem;
 }
 
+
+body {
+    overflow-x: hidden;
+}
+
 /* navigation */
 .navigation {
   display: none;
@@ -289,6 +294,7 @@ h1 {
 }
 
 .trip-card img {
+  aspect-ratio: 1 / 1;
   width: 100%;
   max-width: 300px;
   height: auto;
