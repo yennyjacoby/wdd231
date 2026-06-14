@@ -32,25 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// displaying the trips in trips.html
-// function displayTrips(list) {
-//   const container = document.querySelector("#trips-colombia");
-
-//   container.innerHTML = list.map((trip, index) => `
-//     <article class="trip-card">
-//       <img src="images/${trip.photo}" alt="${trip.name}" loading="lazy" img.width=300 img.height=300>
-//       <h3>${trip.name}</h3>
-//       <p>Location: ${trip.location}</p>
-//       <p>${trip.description}</p>
-
-//       <button class="learn-more" data-index="${index}">
-//         Learn More
-//       </button>
-//     </article>
-//   `).join("");
-// }
-
-
 function displayTrips(list) {
   const container = document.querySelector("#trips-colombia");
 
