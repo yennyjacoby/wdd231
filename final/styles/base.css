@@ -9,7 +9,7 @@
 }
 
 :root {
-  --jungle-green: #2A8D6E;
+  --jungle-green: #1e4d3e;
   --light-jungle: #d6e7e2;
   --caribbean-turquoise: #84e3ea;
   --logo-color: #00318F;
@@ -43,9 +43,7 @@ p {
     text-align: center;
 }
 
-body{
-    background-color: var(--cloud-white);
-}
+
 
 footer  {
     background-color: var(--jungle-green);
