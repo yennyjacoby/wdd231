@@ -20,6 +20,8 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/trips.js" type="module"></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+
 
     <meta property="og:title" content="Colombia Uncovered">
     <meta property="og:description" content="Discover Colombia's most amazing destinations that you will enjoy.">
@@ -132,13 +134,6 @@
             <h2>Thank You! We will contact you shortly</h2>
             <p id="thankYouMessage"></p>
         </dialog>
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const timestampField = document.getElementById("timestamp");
-    timestampField.value = new Date().toISOString();
-    });
-    </script>
-
                             
     </main>
     
